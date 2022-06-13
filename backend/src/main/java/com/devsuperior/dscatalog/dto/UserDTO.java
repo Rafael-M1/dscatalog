@@ -20,6 +20,7 @@ public class UserDTO implements Serializable{
 	private String email;
 	
 	Set<RoleDTO> roles = new HashSet<>();
+	
 	public UserDTO() {
 	}
 
@@ -29,6 +30,7 @@ public class UserDTO implements Serializable{
 		this.lastName = lastName;
 		this.email = email;
 	}
+	
 	public UserDTO(User entity) {
 		this.id = entity.getId();
 		this.firstName = entity.getFirstName();
